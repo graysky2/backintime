@@ -571,9 +571,9 @@ below. Optionally adjust the value for `OnCalendar=` with a valid setting. See
 [`man systemd.timer`](https://manpages.debian.org/testing/systemd/systemd.timer.5)
 for more.
 
+**Timer**:
 ```ini
 # ~/.config/systemd/user/backintime-backup-job.timer
-
 [Unit]
 Description=Start a backintime snapshot once daily
 
@@ -586,9 +586,9 @@ Persistent=true
 WantedBy=timers.target
 ```
 
+**Service**:
 ```ini
 # ~/.config/systemd/user/backintime-backup-job.service
-
 [Unit]
 Description=Run backintime snapshot generation
 
