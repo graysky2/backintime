@@ -565,10 +565,11 @@ schedules.
 
 ## Can I use a systemd timer instead of cron?
 
-While there is not support within *Back In Time* to directly create a systemd
+While there is no support within *Back In Time* to directly create a systemd
 timer, users can create a user timer and service units. Templates are provided
 below. Optionally adjust the value for `OnCalendar=` with a valid setting. See
-`man 5 systemd.timer` for more.
+[`man systemd.timer`](https://manpages.debian.org/testing/systemd/systemd.timer.5)
+for more.
 
 ```
 /home/user/.config/systemd/user/backintime-backup-job.timer
