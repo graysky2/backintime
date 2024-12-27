@@ -571,7 +571,7 @@ below. Optionally adjust the value for `OnCalendar=` with a valid setting. See
 [`man systemd.timer`](https://manpages.debian.org/testing/systemd/systemd.timer.5)
 for more.
 
-```
+```ini
 /home/user/.config/systemd/user/backintime-backup-job.timer
 
 [Unit]
@@ -586,7 +586,7 @@ Persistent=true
 WantedBy=timers.target
 ```
 
-```
+```ini
 /home/user/.config/systemd/user/backintime-backup-job.service
 
 [Unit]
