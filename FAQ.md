@@ -572,7 +572,7 @@ below. Optionally adjust the value for `OnCalendar=` with a valid setting. See
 for more.
 
 ```ini
-/home/user/.config/systemd/user/backintime-backup-job.timer
+# ~/.config/systemd/user/backintime-backup-job.timer
 
 [Unit]
 Description=Start a backintime snapshot once daily
@@ -587,7 +587,7 @@ WantedBy=timers.target
 ```
 
 ```ini
-/home/user/.config/systemd/user/backintime-backup-job.service
+# ~/.config/systemd/user/backintime-backup-job.service
 
 [Unit]
 Description=Run backintime snapshot generation
